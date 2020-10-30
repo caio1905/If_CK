@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+		<title>ETEMB - API REST JAVA com (HTML + JS + CSS)</title>		
+		
+		<!-- Inclusão do CSS do Bootstrap -->	 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="js/toastr.min.css">
+	</head>
+	
+	<!-- Ao carregar a página, executo a função de listagem -->	 
+<body onload="listar();">
+		
+	<center>
+		<h1>ETEMB - API [2020]</h1>
+		<h2>Desenvolvimento de Aplicações Desktop - DAD</h2>		
+		<h4> Backend (API REST JAVA Spring Boot) e Front-end (HTML + JS + CSS) </h4>
+	<center>
+	
+	<br>
+
+	<!-- Definição do Formulário -->	 
+	<form>
+		<div class="form-group ">
+			<div class="form-row mb-3 col-md-4">
+				<label for="inputID">ID</label>
+				<input type="text" class="form-control" id="inputID" placeholder="Informe o ID para Alterar, Excluir e Buscar">
+				<label for="inputNome">Nome</label>
+				<input type="text" class="form-control" id="inputNome" placeholder="Informe o nome para Salvar">
+			</div>
+		</div>
+		<div>
+			<button type="submit" class="btn btn-success btn-lg" onclick="salvar();">Save</button>
+			<button type="submit" class="btn btn-warning btn-lg" onclick="alterar();">Edit</button>
+			<button type="submit" class="btn btn-danger btn-lg" onclick="excluir();">Delete</button>
+			<button type="button" class="btn btn-primary btn-lg" onclick="consultar();">Search</button>
+			<button type="button" class="btn btn-info btn-lg" onclick="listar();">List</button>
+		</div>
+	</form>	 
+
+	<br><br>
+	
+	<!-- Onde a tabela será exibida -->	 
+	<div id="tabela"></div>
+	 
+
+	 <!-- Inclusão dos scripts -->	 	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<!-- Meu script -->	 
+		<script src="script.js"></script>
+	
+		
+	
+		<!-- Scripts do Bootstrap -->	 
+		<!--script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script-->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		
+		<script src="js/toastr.min.js"></script>
+	
+	<!-- Fim dos scripts -->	 
+</body>
+</html>
